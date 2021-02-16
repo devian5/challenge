@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/devian5/challenge/issues"
   },
-  "homepage": "https://github.com/devian5/challenge#readme"
+  "homepage": "https://github.com/devian5/challenge#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
