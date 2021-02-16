@@ -3,4 +3,6 @@ class Car {
 
     }
 }
-module.exports = Car
+
+const carController = new Car()
+module.exports = carController
