@@ -9,6 +9,22 @@ class Car {
         this.storage = new Storage()
     }
 
+    async indexAll(){
+        return;
+    };
+
+    async store(){
+        return;
+    };
+
+    async destroy(){
+        return;
+    };
+
+    async update(){
+        return;
+    };
+
 
 }
 
