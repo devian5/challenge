@@ -20,7 +20,11 @@ class Storage {
          
     };
 
-
+   async findById(id) {
+       const element = this.state [id-1]
+    
+       return element ? element : new Error('ooops')
+   }
 
 }
 
