@@ -13,8 +13,8 @@ class Car {
         return this.storage.get();
     };
 
-    async store(){
-        return;
+    async store(object){
+        return this.storage.set(object);
     };
 
     async destroy(){
