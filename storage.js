@@ -27,15 +27,13 @@ class Storage {
         throw new Error('ooops');
        }
        return element;
-   }
+   };
 
-   async updateById(id,object) {
-      
-    //    if(typeof element !== 'error'){
-    //        element = object;
-    //    }
-    //    return element;
-   }
+    async updateById(id, nextObject) {
+        await this.findById(id);
+        this.state[id-1] = nextObject;
+        return nextObject
+    };
 
 }
 
