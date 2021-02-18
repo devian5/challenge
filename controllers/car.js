@@ -21,8 +21,8 @@ class Car {
         return;
     };
 
-    async update(){
-        return;
+    async update(id, car){
+        return this.storage.updateById(id,car);
     };
 
 
