@@ -17,8 +17,9 @@ class Car {
         return this.storage.set(object);
     };
 
-    async destroy(){
-        return;
+    async destroy(id){
+
+        return this.storage.deleteById(id);
     };
 
     async update(id, car){

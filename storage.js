@@ -16,7 +16,11 @@ class Storage {
     };
 
     async get(){
-        return this.state.slice(-10);
+        
+        return this.state
+        // .map((element,index) => { return {... element,id:index +1}});
+        .filter((element) => element !== null)
+        .slice(-10);
          
     };
 
@@ -33,6 +37,11 @@ class Storage {
         await this.findById(id);
         this.state[id-1] = nextObject;
         return nextObject
+    };
+
+    async deleteById(id) {
+        
+        return this.updateById(id, null);
     };
 
 }
